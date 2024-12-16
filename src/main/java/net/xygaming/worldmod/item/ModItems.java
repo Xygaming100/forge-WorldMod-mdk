@@ -17,4 +17,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> DREAMDUST = ITEMS.register("dreamdust",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLACKQUILL = ITEMS.register("blackquill",
+            () -> new Item(new Item.Properties()));
 }

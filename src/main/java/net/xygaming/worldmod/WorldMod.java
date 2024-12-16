@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.xygaming.worldmod.block.ModBlocks;
 import net.xygaming.worldmod.item.ModCreativeModTabs;
 import net.xygaming.worldmod.item.ModItems;
 import org.slf4j.Logger;
@@ -31,6 +32,7 @@ public class WorldMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

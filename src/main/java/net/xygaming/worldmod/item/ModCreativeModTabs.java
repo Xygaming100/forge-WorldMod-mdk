@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.xygaming.worldmod.WorldMod;
+import net.xygaming.worldmod.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -18,6 +19,9 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.world_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.DREAMDUST.get());
+                        pOutput.accept(ModItems.BLACKQUILL.get());
+
+                        pOutput.accept(ModBlocks.MOONSTONE_ORE.get());
                     })
                     .build());
 

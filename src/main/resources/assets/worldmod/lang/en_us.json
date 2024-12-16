@@ -1,5 +1,9 @@
 {
   "item.worldmod.dreamdust": "Dream Dust",
+  "item.worldmod.blackquill": "Black Quill",
 
-  "creativetab.world_tab": "Dream Dust Tab"
+
+  "block.worldmod.moonstone_ore": "Moonstone Ore",
+
+  "creativetab.world_tab": "Dream Tab"
 }
